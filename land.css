@@ -1,0 +1,314 @@
+/* ===== Colours ===== */
+:root{
+    --body-color: #72923f;
+    --nav-color: #72923f;
+    --side-nav: #010718;
+    --text-color: #FFF;
+}
+
+body{
+    height: 100vh;
+    /* background-color: #72923f; */
+}
+
+
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    background-color: var(--nav-color);
+    z-index: 100;
+}
+
+
+
+nav .nav-bar{
+    position: relative;
+    height: 100%;
+    max-width: 1000px;
+    width: 100%;
+    background-color: var(--nav-color);
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .nav-bar .sidebarOpen{
+    color: var(--text-color);
+    font-size: 80px;
+    padding: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+nav .nav-bar .logo a{
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.menu .logo-toggle{
+    display: none;
+}
+
+.nav-bar .nav-links{
+    display: flex;
+    text-align: center;
+}
+
+.nav-bar .nav-links li{
+    margin: 0 5px;
+    list-style: none;
+}
+
+.nav-links li a{
+    position: relative;
+    font-size: 25px;
+    font-weight: 400;
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 10px;
+}
+
+.nav-links li a:hover{
+    
+    background-color: #FFF;
+    color: black;
+}
+
+.footer a{
+    color:black;
+    font-size: 30px;
+}
+.section h1{
+    text-align: center;
+    justify-content: center;
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 5px;
+    color:#72923f;
+}
+.section p{
+    text-align: center;
+    justify-content: center;
+    word-spacing: 2px;
+    font-size: 20px;
+    color:#72923f;
+
+}
+.img{
+    width: 100%;
+}
+#img{
+    width: 60%;
+    height: 400px;
+    margin: auto;
+    padding-left:250px ;
+}
+.content{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+}
+.article{
+    width: 100%;
+    display: flex;
+    
+}
+#article{
+
+    width: 50%;
+    height: 300px;
+    /* border-radius: 10px; */
+    flex-wrap: wrap;
+}
+#article2{
+    
+    width: 50%;
+    height: 300px;
+    margin-top: 50px;
+    margin-left: 10px;
+    /* border-radius: 50%; */
+    flex-wrap: wrap;
+}
+.article-2{
+    width: 50%;
+     margin-left: 20px; 
+}
+span{
+    font-size: 50px;
+}
+.abc{
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    margin-left: 20px;
+    margin-top: 20px;
+    
+
+}
+#article1{
+
+
+    width: 100%;
+    height: 400px;
+    flex-wrap: wrap;
+   
+}
+.xyz{
+    margin-top: 40px;
+    font-size: 20px;
+    color: #72923f;
+    width: 50%;
+    
+}
+.xyzz{
+    margin-top: 150px;
+   justify-content: center;
+   text-align: center;
+    width: 50%;
+    font-size: 18px;
+    color: #72923f;
+
+}
+.footer{
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    justify-content: center;
+    background-color: #72923f;
+
+    
+}
+h1{
+    color:#72923f;
+    color: #010718;
+
+
+}
+
+
+h6 a{
+    float: left;
+    text-decoration: none;
+    color: #8b1537;
+    
+    
+}
+
+#span{
+    font-size: 15px;
+    color: #010718;
+
+}
+@media(max-width:909px){
+    
+
+
+
+.xyzz,.main,.logo,.footer,h1,.nav,span,.xyz,.abc,#article1,.article-2,#article2,.logo,#article,.content,#img,.section,.section p,.section h1,ul,.i{
+    width:100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.section p{
+    text-align: center;
+    justify-content: center;
+    
+    font-size: 15px;
+    color:#72923f;
+
+}
+.section h1{
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;
+    letter-spacing: 3px;
+    color:#72923f;
+}
+#img{
+    width: 100%;
+    height: 400px;
+    margin: auto;
+    padding-left: 0px;
+}
+#article1{
+    margin-left:-25px;
+}
+.logo{
+    font-size: 18px;
+    /* margin-top: 5px; */
+    text-align: center;
+    justify-content: center;
+}
+span{
+    font-size: 55px;
+    
+}
+.nav{
+    display: none;
+}
+
+
+}
+@media (max-width: 790px) {
+    nav .nav-bar .sidebarOpen{
+        display: block;
+        font-size: 50px;
+    }
+
+    .menu{
+        position: fixed;
+        height: 100%;
+        width: 320px;
+        left: -100%;
+        top: 0;
+        padding: 20px;
+        background-color: var(--side-nav);
+        z-index: 100;
+        transition: all 0.4s ease;
+    }
+
+    nav.active .menu{
+        left: -0%;
+    }
+
+    nav.active .nav-bar .navLogo a{
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+
+    .menu .logo-toggle{
+        display: block;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo-toggle .siderbarClose{
+        color: var(--text-color);
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .nav-bar .nav-links{
+        flex-direction: column;
+        padding-top: 30px;
+    }
+
+    .nav-links li a{
+        display: block;
+        margin-top: 20px;
+    }
+   
+   
+    
+
+    }
